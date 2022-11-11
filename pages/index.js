@@ -61,7 +61,7 @@ export default function Home() {
         </header>{/* End Header */}
         {/* ======= Hero Section ======= */}
         <section id="hero" className="d-flex align-items-center">
-          <div className="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay={100}>
+          <div className="container position-relative text-center text-lg-start"   >
             <div className="row">
               <div className="col-lg-8">
                 <h1>Welcome to <span>Warung Kemarang</span></h1>
@@ -82,14 +82,14 @@ export default function Home() {
           <section id="about" className="about">
             <div className="container" data-aos="fade-up">
               <div className="row">
-                <div className="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay={100}>
+                <div className="col-lg-6 order-1 order-lg-2"   >
                   <div className="about-img">
                     <img src="assets/img/about.jpg" alt />
                   </div>
                 </div>
-                <div className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-                  <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-                  <p className="fst-italic">
+                <div className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1" >
+                  <h3 style={{ color: "white" }}>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+                  <p className="fst-italic tex">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua.
                   </p>
@@ -114,9 +114,9 @@ export default function Home() {
                 <h2>Why Us</h2>
                 <p>Why Choose Our Restaurant</p>
               </div>
-              <div className="row">
+              <div className="row text-white">
                 <div className="col-lg-4">
-                  <div className="box" data-aos="zoom-in" data-aos-delay={100}>
+                  <div className="box "   >
                     <span>01</span>
                     <h4>Lorem Ipsum</h4>
                     <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
@@ -626,7 +626,7 @@ export default function Home() {
               </div>
               <div className="row">
                 <div className="col-lg-4 col-md-6">
-                  <div className="member" data-aos="zoom-in" data-aos-delay={100}>
+                  <div className="member"   >
                     <img src="assets/img/chefs/chefs-1.jpg" className="img-fluid" alt />
                     <div className="member-info">
                       <div className="member-info-content">
