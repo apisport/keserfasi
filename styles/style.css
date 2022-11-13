@@ -1171,6 +1171,7 @@ section {
 # Book A Table
 --------------------------------------------------------------*/
 .book-a-table .php-email-form {
+  margin-top: 4px;
   width: 100%;
 }
 
