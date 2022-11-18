@@ -7,26 +7,13 @@ export default function Home() {
   return (
     <div>
       <div>
-        <div id="topbar" className="d-flex align-items-center fixed-top">
-          <div className="container d-flex justify-content-center justify-content-md-between">
-            <div className="contact-info d-flex align-items-center">
-              <i className="bi bi-phone d-flex align-items-center"><span>+1 5589 55488 55</span></i>
-              <i className="bi bi-clock d-flex align-items-center ms-4"><span> Mon-Sat: 11AM - 23PM</span></i>
-            </div>
-            <div className="languages d-none d-md-flex align-items-center">
-              <ul>
-                <li>En</li>
-                <li><a href="#">De</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
         {/* ======= Hero Section ======= */}
         <section id="hero" className="d-flex align-items-center">
           <div className="container position-relative text-center text-lg-start"   >
             <div className="row">
               <div className="col-lg-8">
-                <h1>Welcome to <span>Warung Kemarang</span></h1>
+                <h1>TERSDITIONAL  <span>CUISINE</span></h1>
+                <h1>&  <span>DANCE</span></h1>
                 <div className="btns">
                   <a href="#menu" className="btn-menu animated fadeInUp scrollto">Our Menu</a>
                   <a href="#book-a-table" className="btn-book animated fadeInUp scrollto">Book a Table</a>
@@ -135,98 +122,6 @@ export default function Home() {
               </div>
             </div>
           </section>{/* End Specials Section */}
-          {/* ======= Events Section ======= */}
-          <section id="events" className="events">
-            <div className="container" data-aos="fade-up">
-              <div className="section-title">
-                <h2>Events</h2>
-                <p>Organize Your Events in our Restaurant</p>
-              </div>
-              <div className="events-slider swiper" data-aos="fade-up" data-aos-delay={100}>
-                <div className="swiper-wrapper">
-                  <div className="swiper-slide">
-                    <div className="row event-item">
-                      <div className="col-lg-6">
-                        <img src="../event-birthday.jpg" className="img-fluid" alt />
-                      </div>
-                      <div className="col-lg-6 pt-4 pt-lg-0 content">
-                        <h3>Birthday Parties</h3>
-                        <div className="price">
-                          <p><span>$189</span></p>
-                        </div>
-                        <p className="fst-italic">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                          magna aliqua.
-                        </p>
-                        <ul>
-                          <li><i className="bi bi-check-circled" /> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                          <li><i className="bi bi-check-circled" /> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                          <li><i className="bi bi-check-circled" /> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                        </ul>
-                        <p>
-                          Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                          velit esse cillum dolore eu fugiat nulla pariatur
-                        </p>
-                      </div>
-                    </div>
-                  </div>{/* End testimonial item */}
-                  <div className="swiper-slide">
-                    <div className="row event-item">
-                      <div className="col-lg-6">
-                        <img src="../event-private.jpg" className="img-fluid" alt />
-                      </div>
-                      <div className="col-lg-6 pt-4 pt-lg-0 content">
-                        <h3>Private Parties</h3>
-                        <div className="price">
-                          <p><span>$290</span></p>
-                        </div>
-                        <p className="fst-italic">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                          magna aliqua.
-                        </p>
-                        <ul>
-                          <li><i className="bi bi-check-circled" /> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                          <li><i className="bi bi-check-circled" /> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                          <li><i className="bi bi-check-circled" /> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                        </ul>
-                        <p>
-                          Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                          velit esse cillum dolore eu fugiat nulla pariatur
-                        </p>
-                      </div>
-                    </div>
-                  </div>{/* End testimonial item */}
-                  <div className="swiper-slide">
-                    <div className="row event-item">
-                      <div className="col-lg-6">
-                        <img src="../event-custom.jpg" className="img-fluid" alt />
-                      </div>
-                      <div className="col-lg-6 pt-4 pt-lg-0 content">
-                        <h3>Custom Parties</h3>
-                        <div className="price">
-                          <p><span>$99</span></p>
-                        </div>
-                        <p className="fst-italic">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                          magna aliqua.
-                        </p>
-                        <ul>
-                          <li><i className="bi bi-check-circled" /> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                          <li><i className="bi bi-check-circled" /> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                          <li><i className="bi bi-check-circled" /> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                        </ul>
-                        <p>
-                          Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                          velit esse cillum dolore eu fugiat nulla pariatur
-                        </p>
-                      </div>
-                    </div>
-                  </div>{/* End testimonial item */}
-                </div>
-                <div className="swiper-pagination" />
-              </div>
-            </div>
-          </section>{/* End Events Section */}
           <Menu></Menu>
           {/* ======= Gallery Section ======= */}
           <section id="gallery" className="gallery">

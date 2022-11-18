@@ -2,14 +2,17 @@ export default function ruangan({ props }) {
 
     return (
 
-        <section id="why-us" className="why-us">
+        <section id="book-a-table" className="why-us">
             <div className="container" data-aos="fade-up">
+                <div className="section-title text-center">
+                    <p>Mulai Reserfasi Sekarang</p>
+                </div>
                 <div className="section-title">
                     <p>Pilih Ruangan</p>
                 </div>
                 <div className="row text-white">
                     <div className="col-lg-4">
-                        <a href="../../pesan" >
+                        <a style={{ textDecoration: 'none'}} href="../../pesan" >
                             <div className="gallery-item">
                                     <img src="../1.jpg" alt className="img-fluid" />
                             </div>
@@ -21,7 +24,7 @@ export default function ruangan({ props }) {
                         </a>
                     </div>
                     <div className="col-lg-4 mt-4 mt-lg-0">
-                        <a href="../../pesan">
+                        <a style={{ textDecoration: 'none' }} href="../../pesan">
                             <div className="gallery-item">
                                 <img src="../1.jpg" alt className="img-fluid" />
                             </div>
@@ -33,7 +36,7 @@ export default function ruangan({ props }) {
                         </a>
                     </div>
                     <div className="col-lg-4 mt-4 mt-lg-0">
-                        <a href="../../pesan">
+                        <a style={{ textDecoration: 'none' }}  href="../../pesan">
                             <div className="gallery-item">
                                 <img src="../1.jpg" alt className="img-fluid" />
                             </div>
