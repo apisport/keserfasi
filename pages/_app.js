@@ -8,14 +8,27 @@ import '../styles/glightbox/css/glightbox.min.css'
 import '../styles/swiper/swiper-bundle.min.css'
 import '../styles/swiper/swiper-bundle.min.css'
 import Layout from '../components/layout'
+import Layoutadmmin from '../components/layoutadmin'
+import { useRouter } from 'next/router'
+
 
 
 function MyApp({ Component, pageProps }) {
-  return (
+  const router = useRouter()
+  if (router.pathname.startsWith('/admin/')) {
+    return (
+      <Layoutadmmin>
+        <Component {...pageProps} />
+      </Layoutadmmin>
+    )
+  }
+  else {
+    return (
     <Layout>
       <Component {...pageProps} />
     </Layout>
-  )
+    )
+  }
 }
 
 export default MyApp

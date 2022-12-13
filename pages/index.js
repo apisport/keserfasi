@@ -9,8 +9,8 @@ export default function Home() {
       <div>
         {/* ======= Hero Section ======= */}
         <section id="hero" className="d-flex align-items-center">
-          <div className="container position-relative text-center text-lg-start"   >
-            <div className="row">
+          <div className="container position-relative text-center text-lg-start mb-5"   >
+            <div className="row mb-5">
               <div className="col-lg-8">
                 <h1>TERSDITIONAL  <span>CUISINE</span></h1>
                 <h1>&  <span>DANCE</span></h1>
@@ -19,7 +19,7 @@ export default function Home() {
                   <a href="#book-a-table" className="btn-book animated fadeInUp scrollto">Book a Table</a>
                 </div>
               </div>
-              <div className="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in" data-aos-delay={200}>
+              <div className="col-lg-4 d-flex align-items-center justify-content-center position-relative " data-aos="zoom-in" data-aos-delay={200}>
                 <a href="https://www.youtube.com/api sport" className="glightbox play-btn" />
               </div>
             </div>
@@ -27,7 +27,9 @@ export default function Home() {
         </section>{/* End Hero */}
         <main id="main">
 
-          <Ruangan></Ruangan>
+          <div className='bg-dark'>
+            <Ruangan></Ruangan>
+          </div>
           {/* ======= Specials Section ======= */}
           <section id="specials" className="specials">
             <div className="container" data-aos="fade-up">

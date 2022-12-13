@@ -185,7 +185,6 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
-  top: 40px;
 }
 
 #header.header-scrolled {
@@ -367,7 +366,7 @@ h6 {
 
 @media (max-width: 991px) {
   .mobile-nav-toggle {
-    display: block;
+    display: contents;
   }
 
   .navbar ul {
@@ -464,7 +463,7 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 100vh;
+  height: auto;
   background: url("../public/1.jpg") top center;
   background-size: cover;
   position: relative;
@@ -482,12 +481,12 @@ h6 {
 }
 
 #hero .container {
-  padding-top: 110px;
+  padding-top: 15px;
 }
 
 @media (max-width: 992px) {
   #hero .container {
-    padding-top: 98px;
+    padding-top: 10px;
   }
 }
 
@@ -628,8 +627,8 @@ h6 {
   }
 
   #hero .container {
-    padding-top: 130px;
-    padding-bottom: 60px;
+    padding-top: 10px;
+    padding-bottom: 50px;
   }
 }
 
@@ -681,9 +680,7 @@ section {
   background-color: #1a1814;
 }
 
-.section-title {
-  padding-bottom: 40px;
-}
+
 
 .section-title h2 {
   font-size: 14px;
@@ -703,7 +700,6 @@ section {
   height: 1px;
   display: inline-block;
   background: rgba(255, 255, 255, 0.2);
-  margin: 4px 10px;
 }
 
 .section-title p {
@@ -954,22 +950,25 @@ section {
 }
 
 .menu .menu-img {
-  width: 70px;
+  width: 80px;
   border-radius: 50%;
   float: left;
   border: 5px solid rgba(255, 255, 255, 0.2);
 }
-
+.menu .bordermenu {
+  border-radius: 5%;
+  float: left;
+  border: 5px solid rgba(255, 255, 255, 0.2);
+}
 .menu .menu-content {
   margin-left: 85px;
   overflow: hidden;
   display: flex;
-  justify-content: space-between;
+  justify-content: align left;
   position: relative;
 }
 
 .menu .menu-content::after {
-  content: "......................................................................""....................................................................""....................................................................";
   position: absolute;
   left: 20px;
   right: 0;
@@ -1004,10 +1003,9 @@ section {
 
 .menu .menu-ingredients {
   margin-left: 85px;
-  font-style: italic;
-  font-size: 14px;
+  font-size: 16px;
   font-family: "Poppins", sans-serif;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.762);
 }
 
 /*--------------------------------------------------------------
@@ -1171,12 +1169,12 @@ section {
 # Book A Table
 --------------------------------------------------------------*/
 .book-a-table .php-email-form {
-  margin-top: 4px;
+  margin-top: 1px;
   width: 100%;
 }
 
 .book-a-table .php-email-form .form-group {
-  padding-bottom: 8px;
+  padding-bottom: 1px;
 }
 
 .book-a-table .php-email-form .validate {
@@ -1192,7 +1190,7 @@ section {
   color: #fff;
   background: #ed3c0d;
   text-align: left;
-  padding: 15px;
+  padding: 10px;
   font-weight: 600;
 }
 
@@ -1205,7 +1203,7 @@ section {
   color: #fff;
   background: #18d26e;
   text-align: center;
-  padding: 15px;
+  padding: 10px;
   font-weight: 600;
 }
 
@@ -1257,9 +1255,6 @@ section {
   height: 44px;
 }
 
-.book-a-table .php-email-form textarea {
-  padding: 10px 12px;
-}
 
 .book-a-table .php-email-form button[type=submit] {
   background: #cda45e;

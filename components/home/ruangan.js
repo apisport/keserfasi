@@ -2,17 +2,17 @@ export default function ruangan({ props }) {
 
     return (
 
-        <section id="book-a-table" className="why-us">
-            <div className="container" data-aos="fade-up">
+        <section id="book-a-table">
+            <div className="container" >
                 <div className="section-title text-center">
-                    <p>Mulai Reserfasi Sekarang</p>
+                    <p style={{fontSize:'28px'}}>Mulai Reserfasi Sekarang</p>
                 </div>
                 <div className="section-title">
-                    <p>Pilih Ruangan</p>
+                    <p style={{ fontSize: '22px' }}>Pilih Ruangan</p>
                 </div>
                 <div className="row text-white">
                     <div className="col-lg-4">
-                        <a style={{ textDecoration: 'none'}} href="../../pesan" >
+                        <a style={{ textDecoration: 'none', color: 'white' }} href="../../pesan" >
                             <div className="gallery-item">
                                     <img src="../1.jpg" alt className="img-fluid" />
                             </div>
@@ -24,7 +24,7 @@ export default function ruangan({ props }) {
                         </a>
                     </div>
                     <div className="col-lg-4 mt-4 mt-lg-0">
-                        <a style={{ textDecoration: 'none' }} href="../../pesan">
+                        <a style={{ textDecoration: 'none', color:'white' }} href="../../pesan">
                             <div className="gallery-item">
                                 <img src="../1.jpg" alt className="img-fluid" />
                             </div>
@@ -36,7 +36,7 @@ export default function ruangan({ props }) {
                         </a>
                     </div>
                     <div className="col-lg-4 mt-4 mt-lg-0">
-                        <a style={{ textDecoration: 'none' }}  href="../../pesan">
+                        <a style={{ textDecoration: 'none', color: 'white' }}  href="../../pesan">
                             <div className="gallery-item">
                                 <img src="../1.jpg" alt className="img-fluid" />
                             </div>
