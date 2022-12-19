@@ -1,4 +1,4 @@
-export default function ruangan({ props }) {
+function Cardpesanan (){
 
     return (
         <div className="p-3  ">
@@ -22,3 +22,4 @@ export default function ruangan({ props }) {
         </div>
     )
 }
+export default Cardpesanan;

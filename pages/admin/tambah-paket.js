@@ -1,4 +1,4 @@
-export default function Pesan() {
+export default function Tambahpaket() {
     return (
         <section id="events" className="events">
             <div className="container" >

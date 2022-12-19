@@ -1,6 +1,7 @@
-import Pesanan from '../../components/admin/cardpesanan'
+//@ts-check
+import Pesan from '../../components/admin/cardpesanan'
 
-export default function Admin() {
+export default function Pesanan() {
     return (
         <div>
             <div>
@@ -8,14 +9,12 @@ export default function Admin() {
                 <section id="hero" className="d-flex align-items-center">
                     <div className="container" >
                         <div className="row text-white p-3">
-                            <Pesanan></Pesanan>
-                            <Pesanan></Pesanan>
-                            <Pesanan></Pesanan>
+                            <Pesan></Pesan>
+                            <Pesan></Pesan>
+                            <Pesan></Pesan>
                         </div>
                     </div>
-                </section>{/* End Hero */}
-                <main id="main">                    
-                </main>
+                </section>
             </div>
 
         </div>

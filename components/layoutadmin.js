@@ -3,7 +3,7 @@ import Footer from './footer'
 import Helmet from 'react-helmet'
 import Head from 'next/head';
 
-const Layout = ({ children }) => {
+const LayoutAdmin = ({ children }) => {
 
     return (
         <div className="container-xxl mx-auto p-0  position-relative header-2-2" >
@@ -32,4 +32,4 @@ const Layout = ({ children }) => {
         </div>
     )
 }
-export default Layout;
+export default LayoutAdmin;

@@ -1,4 +1,4 @@
-export default function Tambahruang() {
+export default function Tambahalbum() {
     return (
         <>
         <section id="book-a-table">

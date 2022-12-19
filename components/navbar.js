@@ -3,9 +3,9 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Link from 'react-bootstrap';
 
-function BasicExample() {
+function Navbaruser() {
     return (
-        < Navbar id="header" className=" d-flex align-items-cente" expand="lg">
+        < Navbar id="hero" className=" d-flex align-items-cente" expand="lg">
             <Container className='container-fluid container-xl d-flex align-items-center justify-content-lg-between'>
                 <Navbar.Brand href="#home">
 
@@ -21,7 +21,9 @@ function BasicExample() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link className='nav-link scrollto' href="#home">Home</Nav.Link>
+                        <Nav.Link className='nav-link scrollto' href="./">
+                            <h4 className='text-white text-start'>Home</h4>
+                        </Nav.Link>
                         <Nav.Link className='nav-link scrollto' href="#link">Boking</Nav.Link>
                         <Nav.Link className='nav-link scrollto' href="#link">Menu</Nav.Link>
                         {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
@@ -42,4 +44,4 @@ function BasicExample() {
     );
 }
 
-export default BasicExample;
+export default Navbaruser;
