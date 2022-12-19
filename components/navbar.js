@@ -3,9 +3,9 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Link from 'react-bootstrap';
 
-function Navbaruser() {
+function navbaruser() {
     return (
-        < Navbar id="hero" className=" d-flex align-items-cente" expand="lg">
+        < Navbar id="header" className="navbar-dark d-flex align-items-cente" expand="lg">
             <Container className='container-fluid container-xl d-flex align-items-center justify-content-lg-between'>
                 <Navbar.Brand href="#home">
 
@@ -20,12 +20,16 @@ function Navbaruser() {
                     </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto">
+                    <Nav className="ml-auto">
                         <Nav.Link className='nav-link scrollto' href="../">
-                            <h4 className='text-white text-start'>Home</h4>
+                            <h5 className='text-white text-start'>Home</h5>
                         </Nav.Link>
-                        <Nav.Link className='nav-link scrollto' href="#book-a-table">Boking</Nav.Link>
-                        <Nav.Link className='nav-link scrollto' href="#link">Menu</Nav.Link>
+                        <Nav.Link className='nav-link scrollto' href="#book-a-table">
+                            <h5 className='text-white text-start'>Reservasi</h5>
+                        </Nav.Link>
+                        <Nav.Link className='nav-link scrollto' href="#menu">
+                            <h5 className='text-white text-start'>Menu</h5>
+                        </Nav.Link>
                         {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                         <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.2">
@@ -44,4 +48,4 @@ function Navbaruser() {
     );
 }
 
-export default Navbaruser;
+export default navbaruser;

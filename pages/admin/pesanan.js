@@ -1,7 +1,7 @@
 //@ts-check
 import Pesan from '../../components/admin/cardpesanan'
 
-export default function Pesanan() {
+export default function Pesanans() {
     return (
         <div>
             <div>

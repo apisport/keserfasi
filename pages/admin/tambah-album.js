@@ -1,4 +1,6 @@
-export default function Tambahalbum() {
+import { Link, Image } from "next/link";
+
+export default function Album() {
     return (
         <>
         <section id="book-a-table">
@@ -10,7 +12,7 @@ export default function Tambahalbum() {
                     <div className="col-lg-4">
                         <a style={{ textDecoration: 'none', color: 'white' }} href="../../pesan" >
                             <div className="gallery-item">
-                                <img src="../1.jpg" alt className="img-fluid" />
+                                <img src="../1.jpg"  className="Image-fluid" />
                             </div>
                             <div className="box ">
                                 <span>01</span>
@@ -22,7 +24,7 @@ export default function Tambahalbum() {
                     <div className="col-lg-4 mt-4 mt-lg-0">
                         <a style={{ textDecoration: 'none', color: 'white' }} href="../../pesan">
                             <div className="gallery-item">
-                                <img src="../1.jpg" alt className="img-fluid" />
+                                <img src="../1.jpg"  className="Image-fluid" />
                             </div>
                             <div className="box" >
                                 <span>02</span>
@@ -34,7 +36,7 @@ export default function Tambahalbum() {
                     <div className="col-lg-4 mt-4 mt-lg-0">
                         <a style={{ textDecoration: 'none', color: 'white' }} href="../../pesan">
                             <div className="gallery-item">
-                                <img src="../1.jpg" alt className="img-fluid" />
+                                <img src="../1.jpg"  className="Image-fluid" />
                             </div>
                             <div className="box" >
                                 <span>03</span>

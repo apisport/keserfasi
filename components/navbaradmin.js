@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Link from 'react-bootstrap';
 
-function NavbarAdmin() {
+function navbarAdmin() {
     return (
         < Navbar id="header" className="navbar-dark d-flex align-items-cente" expand="lg">
             <Container className='container-fluid container-xl d-flex align-items-center justify-content-lg-between'>
@@ -20,7 +20,7 @@ function NavbarAdmin() {
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="navbar-header" >
+                    <Nav className="navbar-header " >
                         <Nav.Link className='nav-link scrollto' href="../admin/home">
                             <h5 className='text-white text-start'>Home</h5>
                         </Nav.Link>
@@ -49,4 +49,4 @@ function NavbarAdmin() {
     );
 }
 
-export default NavbarAdmin;
+export default navbarAdmin;

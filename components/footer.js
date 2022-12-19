@@ -1,16 +1,16 @@
 
-const Footer = () => {
+const Footers = () => {
 
 
     return (
         <footer id="footer">
             <div className="container">
                 <div className="copyright">
-                    © Copyright <strong><span>apisport</span></strong>. creating you'r website
+                    © Copyright <strong><span>apisport</span></strong>
                 </div>
             </div>
         </footer>
     )
 }
 
-export default Footer;
+export default Footers;

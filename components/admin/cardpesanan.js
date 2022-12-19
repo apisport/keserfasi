@@ -1,4 +1,5 @@
-function Cardpesanan (){
+
+export default function Cardpesanan() {
 
     return (
         <div className="p-3  ">
@@ -9,7 +10,7 @@ function Cardpesanan (){
                 <h4><b>Opsi Pembayaran:</b> data</h4>
                 <h5><b>Diterima:</b> data</h5>
                 <h5><b>Tanggal Main:</b> data</h5>
-                <img src="http://placekitten.com/200/300" className='mb-3'></img>
+                <img src="1.jpg" className='mb-3'></img>
                 <div className="row">
                     <div className="col-6">
                         <a className="btn d-block btn-success text-white p-3 mb-2">Terima</a>
@@ -22,4 +23,4 @@ function Cardpesanan (){
         </div>
     )
 }
-export default Cardpesanan;
+

@@ -14,7 +14,7 @@ export default function ruangan({ props }) {
                     <div className='p-2 col-lg-4 '>
                         <div style={{ borderStyle: 'solid', borderColor: 'white', borderRadius: '0.3rem' }}>
                         <a style={{ textDecoration: 'none', color: 'white' }} href="../../pesan" >
-                            <div className="gallery-item" style={{height:'290px'}}>
+                            <div className="gallery-item" >
                                     <img src="../1.jpg" alt="..." className="img-fluid" />
                             </div>
                             <div className="box p-2">
@@ -28,7 +28,7 @@ export default function ruangan({ props }) {
                     <div className='p-2 col-lg-4 '>
                         <div style={{ borderStyle: 'solid', borderColor: 'white', borderRadius: '0.3rem' }}>
                         <a style={{ textDecoration: 'none', color:'white' }} href="../../pesan">
-                                <div className="gallery-item" style={{ height: '290px' }}>
+                                <div className="gallery-item" >
                                     <img src="../2.jpg" alt="..." className="img-fluid" />
                             </div>
                             <div className="box p-2" >
@@ -42,7 +42,7 @@ export default function ruangan({ props }) {
                     <div className='p-2 col-lg-4 '>
                     <div  style={{ borderStyle: 'solid', borderColor: 'white', borderRadius: '0.3rem' }}>
                         <a style={{ textDecoration: 'none', color: 'white' }}  href="../../pesan">
-                                <div className="gallery-item" style={{ height: '290px' }}>
+                                <div className="gallery-item" >
                                     <img src="../3.jpg" alt="..." className="img-fluid" />
                             </div>
                             <div className="box p-2" >
