@@ -7,7 +7,7 @@ function navbaruser() {
     return (
         < Navbar id="header" className="navbar-dark d-flex align-items-cente" expand="lg">
             <Container className='container-fluid container-xl d-flex align-items-center justify-content-lg-between'>
-                <Navbar.Brand href="#home">
+                <Navbar.Brand href="/">
 
                 <img
                         className='logo me-auto me-lg-0'
@@ -16,11 +16,13 @@ function navbaruser() {
                         width="30"
                         height="30"
                     />{'  '}
-                    <h4 className='text-white text-start'>Warung kemarang</h4> 
                     </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto">
+                        <Nav.Link className='nav-link scrollto' href="../">
+                            <h4 className='text-white text-center'><u>Warung kemarang</u></h4>
+                        </Nav.Link>
                         <Nav.Link className='nav-link scrollto' href="../">
                             <h5 className='text-white text-start'>Home</h5>
                         </Nav.Link>

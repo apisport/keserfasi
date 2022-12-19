@@ -16,11 +16,14 @@ function navbarAdmin() {
                         width="50"
                         height="50"
                     />{'  '}
-                    <h4 className='text-white text-start p-2'>Warung kemarang</h4>
+                    {/* <h4 className='text-white text-start p-2'>Warung kemarang</h4> */}
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="navbar-header " >
+                        <Nav.Link className='nav-link scrollto' href="../">
+                            <h4 className='text-white text-center'><u>Warung kemarang</u></h4>
+                        </Nav.Link>
                         <Nav.Link className='nav-link scrollto' href="../admin/home">
                             <h5 className='text-white text-start'>Home</h5>
                         </Nav.Link>
