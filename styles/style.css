@@ -218,7 +218,8 @@ h6 {
 .book-a-table-btn {
   margin: 0 0 0 15px;
   border: 2px solid #cda45e;
-  color: #fff;
+  color: rgb(1, 1, 1);
+    background: #cda45e;
   border-radius: 50px;
   padding: 8px 25px;
   text-transform: uppercase;
@@ -229,7 +230,7 @@ h6 {
 }
 
 .book-a-table-btn:hover {
-  background: #cda45e;
+  background: #f9e1b8;
   color: #fff;
 }
 
@@ -1075,7 +1076,7 @@ section {
 # Events
 --------------------------------------------------------------*/
 .events {
-  background: url(../public/events-bg.jpg) center center no-repeat;
+  background: url(../public/2.jpg) center center no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -1826,4 +1827,10 @@ section {
 }
 ::-webkit-calendar-picker-indicator {
   filter: invert(1);
+}
+.lingkaran {
+  width: 30px;
+  height: 30px;
+  background: #cda45e;
+  border-radius: 100%;
 }

@@ -6,7 +6,7 @@ const Footers = () => {
         <footer id="footer">
             <div className="container">
                 <div className="copyright">
-                    © Copyright <strong><span>apisport</span></strong>
+                    © Copyright <strong><span>apisport.</span></strong>creator website
                 </div>
             </div>
         </footer>

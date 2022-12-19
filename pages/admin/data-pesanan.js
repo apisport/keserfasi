@@ -6,8 +6,9 @@ export default function Datapesanan() {
             <div>
                 {/* ======= Hero Section ======= */}
                 <section id="hero" className="d-flex align-items-center">
-                    <div className="container" >
+                    <div className="" >
                         <div className=" text-white p-3">
+                            <h3 className="text-white table text-center">Data Pesanan</h3>
                             <table className="text-white table text-center">
                                 <thead>
                                     <tr className="bg-dark">

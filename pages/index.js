@@ -37,7 +37,7 @@ export default function Home() {
                 <h2>Specials</h2>
                 <p>Check Our Specials</p>
               </div>
-              <div className="row" data-aos="fade-up" data-aos-delay={100}>
+              <div className="row" >
                 <div className="col-lg-3">
                   <ul className="nav nav-tabs flex-column">
                     <li className="nav-item">

@@ -94,7 +94,6 @@ export default function Pesan() {
                                 </div>
                             </div>
                         </div>
-                        
                         <div className="col-lg-10 col-md-10 form-group mt-3">
                             <label style={{ color: "white" }}>Jumlah Tamu</label>
                             <input type="number" className="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars" />
@@ -106,8 +105,13 @@ export default function Pesan() {
                         <textarea className="form-control" name="message" rows={5} placeholder="Message" defaultValue={""} />
                         <div className="validate" />
                     </div>
-
-                    <div className="text-center mt-5"><button className="book-a-table-btn" type="submit">Book a Table</button></div>
+                    <div className="col-lg-10 col-md-10 form-group mt-3">
+                        <label style={{ color: "white" }}>Bukti transfer</label>
+                        <input type="file" className="form-control" placeholder="Date" />
+                    </div>
+                    <div className="text-center col-lg-10 col-md-10 form-group mt-3 mt-5">
+                        <button className="book-a-table-btn" type="submit">Book a Table</button>
+                    </div>
                 </form>
             </div>
         </section>
