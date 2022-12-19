@@ -21,10 +21,10 @@ function Navbaruser() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link className='nav-link scrollto' href="./">
+                        <Nav.Link className='nav-link scrollto' href="../">
                             <h4 className='text-white text-start'>Home</h4>
                         </Nav.Link>
-                        <Nav.Link className='nav-link scrollto' href="#link">Boking</Nav.Link>
+                        <Nav.Link className='nav-link scrollto' href="#book-a-table">Boking</Nav.Link>
                         <Nav.Link className='nav-link scrollto' href="#link">Menu</Nav.Link>
                         {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                         <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
