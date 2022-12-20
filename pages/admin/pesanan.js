@@ -1,4 +1,3 @@
-//@ts-check
 import Pesan from '../../components/admin/cardpesanan'
 
 export default function Pesanans() {

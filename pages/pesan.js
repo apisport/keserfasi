@@ -190,7 +190,7 @@ export default function Pesan() {
                         <input type="file" className="form-control" placeholder="Date" />
                     </div>
                     <div className="text-center col-lg-10 col-md-10 form-group mt-3 mt-5">
-                        <button className="book-a-table-btn" type="submit">Book a Table</button>
+                        <button className="book-a-table-btn" type="submit">Reservasi sekarang</button>
                     </div>
                 </form>
             </div>
