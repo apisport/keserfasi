@@ -130,7 +130,7 @@ export default function Home() {
         </main>
         <div id="menu" className="mb-5 fixed-bottom bg-dark">
           <div className="text-center col-lg-10 col-md-10 form-group p-4">
-            <a href='/pesan' type='btn' className='book-a-table-btn '>Mlai Reservasi sekarang</a>
+            <a href='/pesan' type='btn' className='book-a-table-btn '>Mulai Reservasi sekarang...</a>
           </div>
         </div>
       </div>
