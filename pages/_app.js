@@ -2,12 +2,11 @@ import '../styles/globals.css'
 import '../styles/style.css'
 import '../styles/bootstrap/css/bootstrap.min.css'
 import '../styles/bootstrap-icons/bootstrap-icons.css'
-import '../styles/boxicons/css/boxicons.min.css'
-// import '../styles/glightbox/css/glightbox.min.css'
-// import '../styles/swiper/swiper-bundle.min.css'
 import Layout from '../components/layout'
 import Layoutadmmin from '../components/layoutadmin'
 import { useRouter } from 'next/router'
+import '../styles/font-awesome-4.7.0/css/font-awesome.min.css'
+
 
 
 

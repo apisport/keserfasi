@@ -231,7 +231,7 @@ h6 {
 
 .book-a-table-btn:hover {
   background: #f9e1b8;
-  color: #fff;
+  color: rgb(4, 4, 4);
 }
 
 @media (max-width: 992px) {
@@ -1771,7 +1771,7 @@ section {
   font-weight: 200;
   color: #333;
   text-align: center;
-  border-color: #1cc88a;
+  border-color: #cda45e;
   vertical-align: middle;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1787,14 +1787,14 @@ section {
 }
 
 .btn-apisport {
-  color: #1cc88a;
-  border-color: #1cc88a
+  color: #c07b02;
+  border-color: #cda45e;
 }
 
 .btn-apisport:hover {
-  color: #1cc88a;
+  color: #cda45e;
   background-color: #fff;
-  border-color: #1cc88a
+  border-color: #cda45e;
 }
 
 .btn-check:focus+.btn-apisport,
@@ -1808,8 +1808,8 @@ section {
 .btn-apisport.active,
 .btn-apisport.dropdown-toggle.show {
   color: #fff;
-  background-color: #1cc88a;
-  border-color: #1cc88a
+  background-color: #cda45e;
+  border-color: #cda45e;
 }
 
 .btn-check:checked+.btn-apisport:focus,
@@ -1817,12 +1817,12 @@ section {
 .btn-apisport:active:focus,
 .btn-apisport.active:focus,
 .btn-apisport.dropdown-toggle.show:focus {
-  box-shadow: 0 0 0 .25rem rgba(28, 200, 138, .5)
+  box-shadow: 0 0 0 .25rem #efcb8d
 }
 
 .btn-apisport:disabled,
 .btn-apisport.disabled {
-  color: #1cc88a;
+  color: #cda45e;
   background-color: transparent
 }
 ::-webkit-calendar-picker-indicator {

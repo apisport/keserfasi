@@ -24,3 +24,8 @@ a {
     background: black;
   }
 }
+.checkbox {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
