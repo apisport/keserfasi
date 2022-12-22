@@ -29,6 +29,9 @@ function navbaruser() {
                         <Nav.Link className='nav-link scrollto' href="#book-a-table">
                             <h5 className='text-white text-start'>Reservasi</h5>
                         </Nav.Link>
+                        <Nav.Link className='nav-link scrollto' href="#specials">
+                            <h5 className='text-white text-start'>Hiburan</h5>
+                        </Nav.Link>
                         <Nav.Link className='nav-link scrollto' href="#menu">
                             <h5 className='text-white text-start'>Menu</h5>
                         </Nav.Link>

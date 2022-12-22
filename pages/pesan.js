@@ -1,6 +1,6 @@
 export default function Pesan() {
     return (
-        <section id="events" className="events">
+        <section id="hero" className="d-flex align-items-center">
             <div className="container" >
                 <div className="section-title">
                     <h2>Reservation</h2>
@@ -20,7 +20,7 @@ export default function Pesan() {
                         </div>
                         <div className="col-lg-10 col-md-10 form-group mt-3 ">
                             <label style={{ color: "white" }}>Nomor Kontak</label>
-                            <input type="text" className="form-control" name="phone" id="phone" placeholder="Nomor Telp." data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                            <input type="number" className="form-control" name="phone" id="phone" placeholder="Nomor Telp." data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                             <div className="validate" />
                         </div>
                         <div className="col-lg-10 col-md-10 form-group mt-3">
@@ -31,8 +31,10 @@ export default function Pesan() {
                             <label style={{ color: "white" }}>Pilih Paket</label>
                             <select className="form-control form-select">
                                 <option disabled>pilih paket</option>
-                                <option>Paket 1 - 75k</option>
-                                <option>Paket 2 - 100k</option>
+                                <option>Paket 80 pax - A</option>
+                                <option>Paket 80 pax - B</option>
+                                <option>Paket 80 pax - C</option>
+                                <option>Paket 80 pax - D</option>
                             </select>
                             <div className="validate" />
                         </div>
@@ -51,50 +53,50 @@ export default function Pesan() {
 
                                 <div className='col-6 col-lg-3 mb-2'  style={{ fontWeight: 500 }}>
                                     <div>
-                                        <input type="checkbox" className="btn-check" />
-                                        <label className="btn-apisport-parent btn-apisport" style={({ backgroundColor: 'red', color: 'white' })} htmlFor={`btn-check1`}>16.00</label>
+                                        <input type="checkbox" className="btn-check" id={`jam1`} />
+                                        <label className="btn-apisport-parent btn-apisport"  htmlFor={`jam1`}>08.00</label>
                                     </div>
                                 </div>
                                 <div className='col-6 col-lg-3 mb-2' id="jam" style={{ fontWeight: 500 }}>
                                     <div>
-                                        <input type="checkbox" className="btn-check" />
-                                        <label className="btn-apisport-parent btn-apisport" style={({ backgroundColor: 'red', color: 'white' })} htmlFor={`btn-check1`}>16.00</label>
+                                        <input type="checkbox" className="btn-check" id={`jam2`} />
+                                        <label className="btn-apisport-parent btn-apisport"  htmlFor={`jam2`}>09.00</label>
                                     </div>
                                 </div>
                                 <div className='col-6 col-lg-3 mb-2' id="jam" style={{ fontWeight: 500 }}>
                                     <div>
-                                        <input type="checkbox" className="btn-check" />
-                                        <label className="btn-apisport-parent btn-apisport" style={({ backgroundColor: 'red', color: 'white' })} htmlFor={`btn-check1`}>16.00</label>
+                                        <input type="checkbox" className="btn-check" id={`jam3`} />
+                                        <label className="btn-apisport-parent btn-apisport"  htmlFor={`jam3`}>10.00</label>
                                     </div>
                                 </div>
                                 <div className='col-6 col-lg-3 mb-2' id="jam" style={{ fontWeight: 500 }}>
                                     <div>
-                                        <input type="checkbox" className="btn-check" />
-                                        <label className="btn-apisport-parent btn-apisport" style={({ backgroundColor: 'red', color: 'white' })} htmlFor={`btn-check1`}>16.00</label>
+                                        <input type="checkbox" className="btn-check" id={`jam4`} />
+                                        <label className="btn-apisport-parent btn-apisport"  htmlFor={`jam4`}>11.00</label>
                                     </div>
                                 </div>
                                 <div className='col-6 col-lg-3 mb-2' id="jam" style={{ fontWeight: 500 }}>
                                     <div>
-                                        <input type="checkbox" className="btn-check" />
-                                        <label className="btn-apisport-parent btn-apisport" style={({ backgroundColor: 'red', color: 'white' })} htmlFor={`btn-check1`}>16.00</label>
+                                        <input type="checkbox" className="btn-check" id={`btn-check11`} id={`jam5`} />
+                                        <label className="btn-apisport-parent btn-apisport"  htmlFor={`jam5`}>12.00</label>
                                     </div>
                                 </div>
                                 <div className='col-6 col-lg-3 mb-2' id="jam" style={{ fontWeight: 500 }}>
                                     <div>
-                                        <input type="checkbox" className="btn-check" id={`btn-check3`} />
-                                        <label className="btn-apisport-parent btn-apisport" style={({ backgroundColor: 'red', color: 'white' })} htmlFor={`btn-check1`}>16.00</label>
+                                        <input type="checkbox" className="btn-check" id={`jam6`} />
+                                        <label className="btn-apisport-parent btn-apisport"  htmlFor={`jam7`}>13.00</label>
                                     </div>
                                 </div>
                                 <div className='col-6 col-lg-3 mb-2' id="jam" style={{ fontWeight: 500 }}>
                                     <div>
-                                        <input type="checkbox" className="btn-check" id={`btn-check2`} />
-                                        <label className="btn-apisport-parent btn-apisport" style={({ backgroundColor: 'red', color: 'white' })} htmlFor={`btn-check1`}>16.00</label>
+                                        <input type="checkbox" className="btn-check" id={`jam8`} />
+                                        <label className="btn-apisport-parent btn-apisport"  htmlFor={`jam8`}>14.00</label>
                                     </div>
                                 </div>
                                 <div className='col-6 col-lg-3 mb-2' id="jam" style={{ fontWeight: 500 }}>
                                     <div>
-                                        <input type="checkbox" className="btn-check" id={`btn-check1`} />
-                                        <label className="btn-apisport-parent btn-apisport" style={({ backgroundColor: 'red', color: 'white' })} htmlFor={`btn-check1`}>16.00</label>
+                                        <input type="checkbox" className="btn-check" id={`jam9`} />
+                                        <label className="btn-apisport-parent btn-apisport"  htmlFor={`jam9`}>16.00</label>
                                     </div>
                                 </div>
                             </div>
@@ -112,7 +114,7 @@ export default function Pesan() {
                                     <label className="card btn-apisport btn-apisport-parent" htmlFor={`btn-check1332`}><div>
                                         <img src="./1.jpg" className="card-img-top" alt="..." />
                                         <div className="card-body">
-                                            <p className="card-text" style={{ fontSize: '12px', lineHeight: '80%' }}><b>the bulk of the card's content.</b></p>
+                                            <p className="card-text" style={{ fontSize: '14px', lineHeight: '80%' }}><b>the bulk of the card's content.</b></p>
                                         </div>
                                     </div></label>                
                                 </div>
@@ -122,7 +124,7 @@ export default function Pesan() {
                                     <label className="card btn-apisport btn-apisport-parent" htmlFor={`btn-check13732`}><div>
                                         <img src="./1.jpg" className="card-img-top" alt="..." />
                                         <div className="card-body">
-                                            <p className="card-text" style={{ fontSize: '12px', lineHeight: '80%' }}><b>the bulk of the card's content.</b></p>
+                                            <p className="card-text" style={{ fontSize: '14px', lineHeight: '80%' }}><b>the bulk of the card's content.</b></p>
                                         </div>
                                     </div></label>
                                 </div>
@@ -132,7 +134,7 @@ export default function Pesan() {
                                     <label className="card btn-apisport btn-apisport-parent" htmlFor={`btn-check132`}><div>
                                         <img src="./1.jpg" className="card-img-top" alt="..." />
                                         <div className="card-body">
-                                            <p className="card-text" style={{ fontSize: '12px', lineHeight: '80%' }}><b>the bulk of the card's content.</b></p>
+                                            <p className="card-text" style={{ fontSize: '14px', lineHeight: '80%' }}><b>the bulk of the card's content.</b></p>
                                         </div>
                                     </div></label>
                                 </div>
@@ -152,7 +154,7 @@ export default function Pesan() {
                                     <label className="card btn-apisport btn-apisport-parent" htmlFor={`btn-check133`}><div>
                                         <img src="./1.jpg" className="card-img-top" alt="..." />
                                         <div className="card-body">
-                                            <p className="card-text" style={{ fontSize: '12px', lineHeight: '80%' }}><b>the bulk of the card's content.</b></p>
+                                            <p className="card-text" style={{ fontSize: '14px', lineHeight: '80%' }}><b>the bulk of the card's content.</b></p>
                                         </div>
                                     </div></label>
                                 </div>
@@ -162,7 +164,7 @@ export default function Pesan() {
                                     <label className="card btn-apisport btn-apisport-parent" htmlFor={`btn-check1373`}><div>
                                         <img src="./1.jpg" className="card-img-top" alt="..." />
                                         <div className="card-body">
-                                            <p className="card-text" style={{ fontSize: '12px', lineHeight: '80%' }}><b>the bulk of the card's content.</b></p>
+                                            <p className="card-text" style={{ fontSize: '14px', lineHeight: '80%' }}><b>the bulk of the card's content.</b></p>
                                         </div>
                                     </div></label>
                                 </div>
@@ -172,7 +174,7 @@ export default function Pesan() {
                                     <label className="card btn-apisport btn-apisport-parent" htmlFor={`btn-check13`}><div>
                                         <img src="./1.jpg" className="card-img-top" alt="..." />
                                         <div className="card-body">
-                                            <p className="card-text" style={{ fontSize: '12px', lineHeight: '80%' }}><b>the bulk of the card's content.</b></p>
+                                            <p className="card-text" style={{ fontSize: '14px', lineHeight: '80%' }}><b>the bulk of the card's content.</b></p>
                                         </div>
                                     </div></label>
                                 </div>
