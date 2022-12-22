@@ -76,7 +76,7 @@ export default function Album() {
                         <h2>Reservation</h2>
                         <p>Lengkapi Data Reserfasi</p>
                     </div>
-                    <form action="forms/book-a-table.php" method="post" role="form" className="php-email-form" data-aos="fade-up" data-aos-delay={100}>
+                    <form method="post" >
                         <div className="row col-lg-12">
                             <div className="col-lg-6 col-md-10 form-group mt-3">
                                 <label style={{ color: "white" }}>Gambar</label>
