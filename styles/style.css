@@ -1793,7 +1793,6 @@ section {
 
 .btn-apisport:hover {
   color: #cda45e;
-  background-color: #fff;
   border-color: #cda45e;
 }
 
@@ -1807,7 +1806,6 @@ section {
 .btn-apisport:active,
 .btn-apisport.active,
 .btn-apisport.dropdown-toggle.show {
-  color: #fff;
   background-color: #cda45e;
   border-color: #cda45e;
 }
