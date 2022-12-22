@@ -81,7 +81,7 @@ export default function Album() {
                             <div className="col-lg-6 col-md-10 form-group mt-3">
                                 <label style={{ color: "white" }}>Gambar</label>
                                 <input type="file" className="form-control" placeholder="Date" />
-                            </div>
+                            </div> 
                             <div className="col-lg-6 col-md-10 mt-3 form-group">
                                 <label style={{ color: "white" }}>Nama Ruangan</label>
                                 <input type="text" name="name" className="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />

@@ -11,7 +11,6 @@ const layoutadmin = ({ children }) => {
             <Script src="../../styles/bootstrap/js/bootstrap.min.js"></Script >
 
             <Head>
-                
 
                 <meta charSet="utf-8" />
                 <meta content="width=device-width, initial-scale=1.0" name="viewport" />
