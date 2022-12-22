@@ -1,12 +1,12 @@
 export default function Pesan() {
     return (
-        <section id="hero" className="d-flex align-items-center">
+        <section id="events" className="events">
             <div className="container" >
                 <div className="section-title">
                     <h2>Reservation</h2>
                     <p>Lengkapi Data Reserfasi</p>
                 </div>
-                <form action="forms/book-a-table.php" method="post" role="form" className="php-email-form" data-aos="fade-up" data-aos-delay={100}>
+                <form  method="post" role="form" className="php-email-form" data-aos="fade-up" data-aos-delay={100}>
                     <div className="row">
                         <div className="col-lg-10 col-md-10 mt-3 form-group">
                             <label style={{color:"white"}}>Nama Pemesan</label>
@@ -20,7 +20,7 @@ export default function Pesan() {
                         </div>
                         <div className="col-lg-10 col-md-10 form-group mt-3 ">
                             <label style={{ color: "white" }}>Nomor Kontak</label>
-                            <input type="number" className="form-control" name="phone" id="phone" placeholder="Nomor Telp." data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                            <input type="text" className="form-control" name="phone" id="phone" placeholder="Nomor Telp." data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                             <div className="validate" />
                         </div>
                         <div className="col-lg-10 col-md-10 form-group mt-3">
@@ -77,7 +77,7 @@ export default function Pesan() {
                                 </div>
                                 <div className='col-6 col-lg-3 mb-2' id="jam" style={{ fontWeight: 500 }}>
                                     <div>
-                                        <input type="checkbox" className="btn-check" id={`btn-check11`} id={`jam5`} />
+                                        <input type="checkbox" className="btn-check"  id={`jam5`} />
                                         <label className="btn-apisport-parent btn-apisport"  htmlFor={`jam5`}>12.00</label>
                                     </div>
                                 </div>
@@ -191,10 +191,11 @@ export default function Pesan() {
                         <label style={{ color: "white" }}>Bukti transfer</label>
                         <input type="file" className="form-control" placeholder="Date" />
                     </div>
-                    <div className="text-center col-lg-10 col-md-10 form-group mt-3 mt-5">
-                        <button className="book-a-table-btn" type="submit">Reservasi sekarang</button>
-                    </div>
+                    
                 </form>
+                <div className="text-center col-lg-10 col-md-10 form-group mt-3 mt-5">
+                    <a href="/nota"> <button className="book-a-table-btn" >Reservasi sekarang</button></a>
+                </div>
             </div>
         </section>
     )

@@ -25,12 +25,15 @@ export default function Nota() {
                                             <div className=" mt-3">
                                                 <h3 style={{ color: 'black' }} ><b>WARUNG KEMARANG</b></h3>
                                                 <div className="row">
-                                                            <div className='col-12 col-sm-4 mb-2'>
+                                                    <div className='col-12 col-sm-4 mb-2'>
+                                                        <h4 style={{ color: 'black' }}>12-12-2-2022</h4>
+                                        
                                                                 <div className='card'>
                                                                     <div className='card-body'>
                                                                 <h3 style={{ color: 'black'}}>10.00 - 13.00</h3>
-                                                                    </div>
-                                                                </div>
+                                                            </div>
+
+                                                        </div>
                                                             </div>
                                                 </div>
                                             </div>

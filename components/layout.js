@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
     return (
         <div className="container-xxl mx-auto p-0  position-relative header-2-2" >
             <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="undefined" crossorigin="anonymous"></Script >
-            <Script src="../../styles/bootstrap/js/bootstrap.min.js"></Script >
+            {/* <Script src="../../styles/bootstrap/js/bootstrap.min.js"></Script > */}
            
             <Head>
 
