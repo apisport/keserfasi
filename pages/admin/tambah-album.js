@@ -1,105 +1,123 @@
 import { Link, Image } from "next/link";
-
+import { useState } from 'react';
+import Cardfoto from '../../components/admin/album/album'
 export default function Album() {
+    const [deskripsi, setDeskripsi] = useState('');
+    const [foto1, setFoto] = useState('');
+    const [image, setImage] = useState(null);
+    const [createObjectURL, setCreateObjectURL] = useState(null);
+    const [error, setError] = useState('');
+    const [message, setMessage] = useState('');
+    const [uploading, setUploading] = useState(false)
+
+    const handlePost = async (e) => {
+        e.preventDefault();
+        let imageUrl = ''
+        //Uploading
+        setUploading(true)
+        //Uploading
+        const body = new FormData();
+        //console.log("file", image)
+        body.append("file", image);
+        body.append('upload_preset', 'kemarang-images');
+        const response = await fetch('https://api.cloudinary.com/v1_1/dlxni4x0g/image/upload', {
+            method: 'POST',
+            body
+        }).then(r => r.json());
+        let foto = response.secure_url
+        //Uploading
+
+        //Cloudinary End
+
+        // reset error and message
+        setError('');
+        setMessage('');
+        // fields check
+        if (!deskripsi || !foto)
+            return setError('All fields are required');
+        // post structure
+        let album = {
+            deskripsi,
+            foto
+        };
+        // save the post
+        let response1 = await fetch('/api/db_album', {
+            method: 'POST',
+            body: JSON.stringify(album),
+        });
+        // get the data
+        let data = await response1.json();
+        if (data.success) {
+            // reset the fields
+            setDeskripsi('');
+            setFoto('');
+            //setImage(null)
+            setCreateObjectURL(null);
+            // set the message
+            return setMessage(data.message);
+        }
+        else {
+            // set the error
+            console.log(data.message);
+            return setError(data.message);
+        }
+    };
+    const uploadToClient = (event) => {
+        if (event.target.files && event.target.files[0]) {
+            const i = event.target.files[0];
+            setFoto(i.name)
+            setImage(i);
+            setCreateObjectURL(URL.createObjectURL(i));
+        }
+    };
+    const uploadToServer = async (event) => {
+        const body = new FormData();
+        //console.log("file", image)
+        body.append("file", image);
+        const response = await fetch("/api/upload", {
+            method: "POST",
+            body
+        });
+    };
+    
     return (
         <>
-            <section id="gallery" className="gallery">
-                <div className="container" data-aos="fade-up">
-                    <div className="section-title">
-                        <h2>Gallery Warung kemarang</h2>
-                    </div>
-                </div>
-                <div className="container-fluid" data-aos="fade-up" data-aos-delay={100}>
-                    <div className="row col-lg-12">
-                        <div className="col-lg-3 col-md-4">
-                            <div className="gallery-item">
-                                <a href="../../1.jpg" className="gallery-lightbox" data-gall="gallery-item">
-                                    <img src="../../1.jpg" alt className="img-fluid" />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-4">
-                            <div className="gallery-item">
-                                <a href="../../1.jpg" className="gallery-lightbox" data-gall="gallery-item">
-                                    <img src="../../1.jpg" alt className="img-fluid" />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-4">
-                            <div className="gallery-item">
-                                <a href="../../1.jpg" className="gallery-lightbox" data-gall="gallery-item">
-                                    <img src="../../1.jpg" alt className="img-fluid" />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-4">
-                            <div className="gallery-item">
-                                <a href="../../1.jpg" className="gallery-lightbox" data-gall="gallery-item">
-                                    <img src="../../1.jpg" alt className="img-fluid" />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-4">
-                            <div className="gallery-item">
-                                <a href="../../1.jpg" className="gallery-lightbox" data-gall="gallery-item">
-                                    <img src="../../1.jpg" alt className="img-fluid" />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-4">
-                            <div className="gallery-item">
-                                <a href="../../1.jpg" className="gallery-lightbox" data-gall="gallery-item">
-                                    <img src="../../1.jpg" alt className="img-fluid" />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-4">
-                            <div className="gallery-item">
-                                <a href="../../1.jpg" className="gallery-lightbox" data-gall="gallery-item">
-                                    <img src="../../1.jpg" alt className="img-fluid" />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-4">
-                            <div className="gallery-item">
-                                <a href="../../1.jpg" className="gallery-lightbox" data-gall="gallery-item">
-                                    <img src="../../1.jpg" alt className="img-fluid" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
             <section id="events" className="events">
                 <div className="container" >
                     <div className="section-title">
                         <h2>Reservation</h2>
-                        <p>Lengkapi Data Reserfasi</p>
                     </div>
-                    <form method="post" >
+                    <form onSubmit={handlePost} >
                         <div className="row col-lg-12">
                             <div className="col-lg-6 col-md-10 form-group mt-3">
+                                <div className="col-6   ">
+                                    <img src={createObjectURL} className='img img-fluid' style={{ width: '30', height: '20' }} />
+                                </div>
                                 <label style={{ color: "white" }}>Gambar</label>
-                                <input type="file" className="form-control" placeholder="Date" />
-                            </div> 
-                            <div className="col-lg-6 col-md-10 mt-3 form-group">
-                                <label style={{ color: "white" }}>Nama Ruangan</label>
-                                <input type="text" name="name" className="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                                <div className="validate" />
+                                <input type="file" className="form-control" name="myImage" onChange={uploadToClient} />
                             </div>
-                            <div className="col-lg-6 col-md-10 form-group mt-3">
-                                <label style={{ color: "white" }}>Deskripsi</label>
-                                <input type="email" className="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                            <div className="col-lg-6 col-md-10 mt-3 form-group">
+                                <label style={{ color: "white" }}>Deskripsi album </label>
+                                <input type="text"
+                                    name="deskripsi"
+                                    className="form-control"
+                                    placeholder="deskripsi"
+                                    onChange={(e) => setDeskripsi(e.target.value)}
+                                    value={deskripsi}
+                                />
                                 <div className="validate" />
                             </div>
                             <div className="text-center col-lg-10 col-md-10 form-group mt-3 mt-5">
-                                <button className="book-a-table-btn" type="submit">Tambah Ruangan</button>
+                                <button className="book-a-table-btn" type="submit" onClick={uploadToServer} >Tambah Ruangan</button>
                             </div>
                         </div>
 
                     </form>
                 </div>
             </section>
+            <Cardfoto/>
+            
+            
         </>
     )
 }

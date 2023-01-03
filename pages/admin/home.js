@@ -49,7 +49,7 @@ export default function Homeadmin() {
                                     </div>
                                     <div className='p-2 col-lg-4 '>
                                         <div className=" p-2" style={{ borderStyle: 'solid', borderColor: 'white', borderRadius: '0.3rem' }}>
-                                            <a style={{ textDecoration: 'none', color: 'white' }} href="/admin/pesan" >
+                                            <a style={{ textDecoration: 'none', color: 'white' }} href="/admin/data-pesanan" >
                                                 <div className="section-title">
                                                     <p style={{ fontSize: '22px' }}>Data Pesanan</p>
                                                 </div>

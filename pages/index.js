@@ -25,6 +25,15 @@ export default function Home() {
             </div>
           </div>
         </section>{/* End Hero */}
+        <div className=" sticky-top bg-dark">
+          <div className="text-center form-group p-3">
+            <a href='/pesan' type='btn' className='btn-rs' style={{ textDecoration: 'none', color: 'white' }}>
+              <b style={{ marginTop: '3px' }}>Mulai Reservasi sekarang</b>
+              <i className="fa fa-hand-o-right" style={{ fontSize: '22px', paddingLeft: '2px' }} />
+            </a>
+          </div>
+        </div>
+
         <main id="main">
 
           <div className='bg-dark'>
@@ -44,14 +53,27 @@ export default function Home() {
                       <p className="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
                       <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
                     </div> */}
-                    <div className="col-lg-4 text-center ">
-                      <img src="./hib1.jpg" className="img-fluid" />
+                    <div className='col-lg-4 col-sm-6'>
+                      <div className="profile-card-6">
+                      <img src="1.jpg" className="img img-fluid" />
+                        <div className="profile-name">Hiburan 1</div>
+                        <div className="profile-position">Lorem Ipsum Donor</div>
+                      </div>
                     </div>
-                    <div className="col-lg-4 text-center ">
-                      <img src="./hib2.jpg" className="img-fluid" />
+                    <div className='col-lg-4 col-sm-6'>
+                      <div className="profile-card-6">
+                        <img src="2.jpg" className="img img-fluid" />
+                        <div className="profile-name">Hiburan 2</div>
+                        <div className="profile-position">Lorem Ipsum Donor</div>
+                      </div>
                     </div>
-                    <div className="col-lg-4 text-center ">
-                      <img src="./hib3.jpg" className="img-fluid" />
+                    <div className='col-lg-4 col-sm-6'>
+                      <div className="profile-card-6">
+                        <img src="3.jpg" className="img img-fluid" />
+                        <div className="profile-name">JOHN
+                          <br />DOE</div>
+                        <div className="profile-position">Lorem Ipsum Donor</div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -128,11 +150,7 @@ export default function Home() {
             </div>
           </section>{/* End Gallery Section */}
         </main>
-        <div id="menu" className="mb-5 fixed-bottom bg-dark">
-          <div className="text-center col-lg-10 col-md-10 form-group p-4">
-            <a href='/pesan' type='btn' className='book-a-table-btn ' style={{ textDecoration: 'none', color: 'white' }}><b>Mulai Reservasi sekarang...</b></a>
-          </div>
-        </div>
+
       </div>
       
     </div>

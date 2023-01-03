@@ -4,11 +4,11 @@ export default function ruangan({ props }) {
 
         <section id="book-a-table">
             <div className="container" >
-                <div className="section-title text-center">
+                {/* <div className="section-title text-center">
                     <p style={{fontSize:'28px'}}>Mulai Reserfasi Sekarang</p>
-                </div>
+                </div> */}
                 <div className="section-title">
-                    <p style={{ fontSize: '22px' }}>Pilih Ruangan</p>
+                    <p style={{ fontSize: '22px' }}>Ruangan</p>
                 </div>
                 <div className="row text-white">
                     <div className='p-2 col-lg-4 '>

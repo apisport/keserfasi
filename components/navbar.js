@@ -18,7 +18,7 @@ function navbaruser() {
                     />{'  '}
                     </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
+                <Navbar.Collapse id="basic-navbar-nav fixed">
                     <Nav className="ml-auto">
                         <Nav.Link className='nav-link scrollto' href="../">
                             <h4 className='text-white text-center'><u>Warung kemarang</u></h4>
