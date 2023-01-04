@@ -1,5 +1,6 @@
 import { Link, Image } from "next/link";
 import { useState } from 'react';
+import useSWR from 'swr'
 import Cardfoto from '../../components/admin/album/album'
 export default function Album() {
     const [deskripsi, setDeskripsi] = useState('');
