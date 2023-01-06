@@ -1,5 +1,5 @@
 
-import Cardfoto from '../album/cardalbum'
+import Cardfoto from './cardalbum'
 import useSWR from 'swr'
 
 
