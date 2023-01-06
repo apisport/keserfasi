@@ -1,10 +1,8 @@
 //@ts-check
 import React from 'react'
-var converter = new Showdown.converter();
 
 export default function Cardruangan({ props }) {
     let namaHasil = props.namaruang.split(" ").join("");
-    var rawMarkup = converter.makeHtml(this.props.children.toString());
     return (
         <div className="col-lg-4">
             <div className="gallery-item">
