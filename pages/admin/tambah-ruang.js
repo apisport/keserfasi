@@ -22,19 +22,25 @@ export default function Tambahruang() {
 
     const handlePost = async (e) => {
         e.preventDefault();
-        let foto = ''
         //Uploading
         setUploading(true)
         //Uploading
         const body = new FormData();
+        let foto1 = []
+
         //console.log("file", image)
-        body.append("file", image);
-        body.append('upload_preset', 'kemarang-images');
-        const response = await fetch('https://api.cloudinary.com/v1_1/dlxni4x0g/image/upload', {
-            method: 'POST',
-            body
-        }).then(r => r.json());
-        foto = response.secure_url
+        for (let i = 0; i < image.length; i++) {
+            await body.append("file", image[i]);
+            body.append('upload_preset', 'kemarang-images');
+            const response = await fetch('https://api.cloudinary.com/v1_1/dlxni4x0g/image/upload', {
+                method: "POST",
+                body
+            }).then(r => r.json());
+            await console.log(response)
+            await console.log('Secure URL')
+            await console.log(response.secure_url)
+            foto1.push(response.secure_url)
+        }
         //Uploading
 
         //Cloudinary End
@@ -45,14 +51,14 @@ export default function Tambahruang() {
         clearInput();
         alert("Penambahan Data Sukses")
         // fields check
-        if (!deskripsi || !namaruang || !kapasitas || !foto)
+        if (!deskripsi || !namaruang || !kapasitas || !foto1)
             return setError('isi semua data');
         // post structure
         let ruangan = {
             namaruang,
             kapasitas,
             deskripsi,
-            foto
+            foto1
         };
         // save the post
         let response1 = await fetch('/api/db_ruangan', {
@@ -79,6 +85,7 @@ export default function Tambahruang() {
         }
 
     };
+    
     const uploadToClient = (event) => {
         if (event.target.files && event.target.files[0]) {
             var x = document.getElementById("image");
@@ -146,9 +153,9 @@ export default function Tambahruang() {
                                 <input type="file" className="form-control" name="myImage" onChange={uploadToClient} />
                             </div>
                             <div className="col-lg-6 col-md-10 mt-3 form-group">
-                                <label style={{ color: "white" }}>Nama ruang </label>
+                                <label style={{ color: "white" }} htmlFor="validatedCustomFile">Nama ruang </label>
                                 <input type="text"
-                                    name="namaruang"
+                                    id="validatedCustomFile" name="myImage"
                                     className="form-control"
                                     placeholder="Nama ruangan"
                                     onChange={(e) => setNamaruang(e.target.value)}

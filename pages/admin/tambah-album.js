@@ -10,6 +10,11 @@ export default function Album() {
     const [error, setError] = useState('');
     const [message, setMessage] = useState('');
     const [uploading, setUploading] = useState(false)
+    const clearInput = () => {
+        setDeskripsi('');
+        setFoto('');
+        setUploading(false)
+    }
 
     const handlePost = async (e) => {
         e.preventDefault();
@@ -27,12 +32,14 @@ export default function Album() {
         }).then(r => r.json());
         let foto = response.secure_url
         //Uploading
-
+        setUploading(true)
         //Cloudinary End
 
         // reset error and message
         setError('');
         setMessage('');
+        clearInput();
+        alert("Penambahan Data Sukses")
         // fields check
         if (!deskripsi || !foto)
             return setError('All fields are required');
@@ -71,15 +78,6 @@ export default function Album() {
             setCreateObjectURL(URL.createObjectURL(i));
         }
     };
-    const uploadToServer = async (event) => {
-        const body = new FormData();
-        //console.log("file", image)
-        body.append("file", image);
-        const response = await fetch("/api/upload", {
-            method: "POST",
-            body
-        });
-    };
     
     return (
         <>
@@ -109,7 +107,7 @@ export default function Album() {
                                 <div className="validate" />
                             </div>
                             <div className="text-center col-lg-10 col-md-10 form-group mt-3 mt-5">
-                                <button className="book-a-table-btn" type="submit" onClick={uploadToServer} >Tambah Ruangan</button>
+                                <button className="book-a-table-btn" type="submit"  disabled={uploading === false ? (false) : (true)}>Tambah Ruangan</button>
                             </div>
                         </div>
 

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 export default function Cardpesanan({ props }) {
-    const foto = "uploads/" + props.foto
+    const foto = "/" + props.foto
 
     return (
         <div className="col-lg-3 col-md-4">

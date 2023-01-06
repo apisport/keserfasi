@@ -3,22 +3,22 @@ import React from 'react'
 
 export default function Cardruangan({ props }) {
     let namaHasil = props.namaruang.split(" ").join("");
+    const foto = "/" + props.foto
+
     return (
         <div className="col-lg-4">
             <div className="gallery-item">
-                <div id={`${namaHasil}`} className="carousel slide" data-bs-ride="true">
-                    <div className="carousel-indicators">
-                        {props.foto.map((data, i) => (
-                            <>
-                                {i == 0 ?
-                                    (<button type="button" data-bs-target={`#${namaHasil}`} data-bs-slide-to={i} className="active" aria-current="true" aria-label={`Slide ${i}`} />) :
-                                    (<button type="button" data-bs-target={`#${namaHasil}`} data-bs-slide-to={i} aria-label={`Slide ${i}`} />)}
+                <div id={`${namaHasil}`} className="carousel slide" data-bs-ride="carousel">
+                    {props.foto1.map((data, i) => (
+                        <>
+                            {i == 0 ?
+                                (<button type="button" data-bs-target={`#${namaHasil}`} data-bs-slide-to={i} className="active" aria-current="true" aria-label={`Slide ${i}`} />) :
+                                (<button type="button" data-bs-target={`#${namaHasil}`} data-bs-slide-to={i} aria-label={`Slide ${i}`} />)}
 
-                            </>
-                        ))}
-                    </div>
+                        </>
+                    ))}
                     <div className="carousel-inner">
-                        {props.foto.map((data, i) => (
+                        {props.foto1.map((data, i) => (
                             <>
                                 {i == 0 ?
                                     (<div className="carousel-item active">
@@ -29,20 +29,17 @@ export default function Cardruangan({ props }) {
                                     </div>)}
                             </>
                         ))}
-
                     </div>
-                    <div>
-                        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                            <span className="carousel-control-prev-icon" aria-hidden="true" />
-                            <span className="visually-hidden">Previous</span>
-                        </button>
-                        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                            <span className="carousel-control-next-icon" aria-hidden="true" />
-                            <span className="visually-hidden">Next</span>
-                        </button>
-                    </div>
-
+                    <button className="carousel-control-prev" type="button" data-bs-target={`#${namaHasil}`} data-bs-slide="prev">
+                        <span className="carousel-control-prev-icon" aria-hidden="true" />
+                        <span className="visually-hidden">Previous</span>
+                    </button>
+                    <button className="carousel-control-next" type="button" data-bs-target={`#${namaHasil}`} data-bs-slide="next">
+                        <span className="carousel-control-next-icon" aria-hidden="true" />
+                        <span className="visually-hidden">Next</span>
+                    </button>
                 </div>
+
             </div>
             <div className="box ">
                 <span>{props.i}</span>
